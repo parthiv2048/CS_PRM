@@ -68,6 +68,7 @@ for student_details in students:
 
 # TASK 1.2 with TASK 1.6
 
+print("Student Name" + " " * 20 + "Email Address" + " " * 20 + "Date of birth" + " " * 20 + "Student ID")
 for student_details in students:
     if student_details != None or len(student_details) != 0:
         print(student_details[0] + " " * (32-len(student_details[0])), end="")
@@ -78,7 +79,7 @@ for student_details in students:
 # TASK 1.3 with TASK 1.6
 
 query_name = input("What is your name?: ")
-print("Student name" + " " * 20 + "Email Address")
+print("Student Name" + " " * 20 + "Email Address" + " " * 20 + "Date of birth" + " " * 20 + "Student ID")
 for student_details in students:
     student_name = student_details[0]
     if query_name == student_name:
@@ -88,7 +89,7 @@ for student_details in students:
 # TASK 1.4 with TASK 1.6
 
 query_name = input("What is your name (part or whole)?: ")
-print("Student name" + " " * 20 + "Email Address")
+print("Student Name" + " " * 20 + "Email Address" + " " * 20 + "Date of birth" + " " * 20 + "Student ID")
 for student_details in students:
     student_name = student_details[0]
     if query_name in student_name:
