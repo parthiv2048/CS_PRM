@@ -20,7 +20,7 @@ for student_details in students:
 
 print("Student name" + " " * 20 + "Email Address")
 for student_details in students:
-    if student_details != None:
+    if student_details != None or len(student_details) != 0:
         student_name = student_details[:student_details.index("#")]
         student_email = student_details[student_details.index("#")+1:]
         print(student_name + " " * (32-len(student_name)) + student_email)
@@ -46,6 +46,7 @@ for student_details in students:
 
 # TASK 1.6
 
+# TASK 1.1 with TASK 1.6
 students = []
 while True:
     students_left = input("Are there any more students left? (Y/N): ")
@@ -64,3 +65,34 @@ for student_details in students:
     print(student_details[1] + " " * (33-len(student_details[1])), end="")
     print(student_details[2] + " " * (33-len(student_details[2])), end="")
     print(student_details[3])
+
+# TASK 1.2 with TASK 1.6
+
+for student_details in students:
+    if student_details != None or len(student_details) != 0:
+        print(student_details[0] + " " * (32-len(student_details[0])), end="")
+        print(student_details[1] + " " * (33-len(student_details[1])), end="")
+        print(student_details[2] + " " * (33-len(student_details[2])), end="")
+        print(student_details[3])
+
+# TASK 1.3 with TASK 1.6
+
+query_name = input("What is your name?: ")
+print("Student name" + " " * 20 + "Email Address")
+for student_details in students:
+    student_name = student_details[0]
+    if query_name == student_name:
+        student_email = student_details[1]
+        print(student_name + " " * (32-len(student_name)) + student_email)
+
+# TASK 1.4 with TASK 1.6
+
+query_name = input("What is your name (part or whole)?: ")
+print("Student name" + " " * 20 + "Email Address")
+for student_details in students:
+    student_name = student_details[0]
+    if query_name in student_name:
+        print(student_details[0] + " " * (32-len(student_details[0])), end="")
+        print(student_details[1] + " " * (33-len(student_details[1])), end="")
+        print(student_details[2] + " " * (33-len(student_details[2])), end="")
+        print(student_details[3])

@@ -1,3 +1,3 @@
 # Computer Science Pre-Release Material
-## Task 1 -> task_1.py
-## Task 2 -> task_2.py
+## Task 1
+Task 1 is in task_1.py
